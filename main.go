@@ -28,7 +28,7 @@ func main() {
 
 	// create server
 	srv := http.Server{
-		Addr:         "localhost:11345",
+		Addr:         cfg.Addr,
 		Handler:      r,
 		ReadTimeout:  60 * time.Second,
 		WriteTimeout: 60 * time.Second,
